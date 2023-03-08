@@ -1,0 +1,36 @@
+﻿@model List<Phone>
+
+@{
+    ViewBag.Title = "Мобильные телефоны";
+    Layout = "_Layout";
+}
+
+<h2>Мобильные телефоны</h2>
+<a asp-action="Add" asp-controller="Phones">Добавить смартфон</a>
+<div class="table_section">
+    @if (@Model.Count == 0)
+    {
+        <p>Смартфоны еще не добавлены</p>
+    }
+    else
+    {
+        <table style="width: 100%;">
+            <tr>
+                <th>Id</th>
+                <th>Наименование</th>
+                <th>Компания</th>
+                <th>Стоимость</th>
+            </tr>
+            @foreach (var phone in @Model)
+            {
+                <tr>
+                    <td>@phone.Id</td>
+                    <td>@phone.Name</td>
+                    <td>@phone.Company</td>
+                    <td>@phone.Price</td>
+                </tr>
+            }
+
+        </table>
+    }
+</div>
