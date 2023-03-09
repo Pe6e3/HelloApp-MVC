@@ -18,6 +18,50 @@ namespace HelloApp.Controllers
             return View();
         }
 
+        public IActionResult Contacts()
+        {
+            return View();
+        }
+
+        public IActionResult Projects()
+        {
+            return View();
+        }
+
+        //public IActionResult Index()
+        //{
+        //    return Redirect("~/Home/Privacy");
+        //}
+        public IActionResult Pe6e3()
+        {
+            return Redirect("https://pe6e3.github.io/");
+        }
+
+        public IActionResult TestAction()
+        {
+            return RedirectToAction("Pe6e3");
+        }
+
+        public IActionResult TestAction2()
+        {
+            Rectangle numbers = new Rectangle();
+            numbers.Width = 13;
+            numbers.Height = 11;
+
+            //return RedirectToAction("Square2", "Geometry",numbers);
+            return RedirectToAction("Square2", "Geometry", new
+            {
+                Width = 20,
+                Height = 10
+            });
+
+        }
+
+        public IActionResult TestRedirectToRoute()
+        {
+            return RedirectToRoute("default", new { controller = "Geometry", action = "Sum", numbers = 20});
+
+        }
 
         public string Name(string myName, int age)
         {

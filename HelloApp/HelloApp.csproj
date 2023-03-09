@@ -15,4 +15,53 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\2023.jpg" />
+    <None Include="wwwroot\img\BAP.jpg" />
+    <None Include="wwwroot\img\dam.jpg" />
+    <None Include="wwwroot\img\gorelnik.jpg" />
+    <None Include="wwwroot\img\ico\insta.png" />
+    <None Include="wwwroot\img\ico\mail.png" />
+    <None Include="wwwroot\img\ico\mobile.png" />
+    <None Include="wwwroot\img\ico\telega.png" />
+    <None Include="wwwroot\img\ico\whatsapp.png" />
+    <None Include="wwwroot\img\japanese.jpg" />
+    <None Include="wwwroot\img\me.png" />
+    <None Include="wwwroot\img\Mountains\1.jpeg" />
+    <None Include="wwwroot\img\Mountains\10.jpg" />
+    <None Include="wwwroot\img\Mountains\11.jpg" />
+    <None Include="wwwroot\img\Mountains\12.jpg" />
+    <None Include="wwwroot\img\Mountains\2.jpeg" />
+    <None Include="wwwroot\img\Mountains\3.jpeg" />
+    <None Include="wwwroot\img\Mountains\4.jpeg" />
+    <None Include="wwwroot\img\Mountains\5.jpg" />
+    <None Include="wwwroot\img\Mountains\6.jpg" />
+    <None Include="wwwroot\img\Mountains\7.jpg" />
+    <None Include="wwwroot\img\Mountains\9.jpg" />
+    <None Include="wwwroot\img\Mountains\HEIC\1.HEIC" />
+    <None Include="wwwroot\img\Mountains\HEIC\10.HEIC" />
+    <None Include="wwwroot\img\Mountains\HEIC\11.HEIC" />
+    <None Include="wwwroot\img\Mountains\HEIC\12.HEIC" />
+    <None Include="wwwroot\img\Mountains\HEIC\2.HEIC" />
+    <None Include="wwwroot\img\Mountains\HEIC\3.HEIC" />
+    <None Include="wwwroot\img\Mountains\HEIC\4.HEIC" />
+    <None Include="wwwroot\img\Mountains\HEIC\5.HEIC" />
+    <None Include="wwwroot\img\Mountains\HEIC\6.HEIC" />
+    <None Include="wwwroot\img\Mountains\HEIC\7.HEIC" />
+    <None Include="wwwroot\img\Mountains\HEIC\8.HEIC" />
+    <None Include="wwwroot\img\Mountains\HEIC\9.HEIC" />
+    <None Include="wwwroot\img\Mountains\mount\1.jpg" />
+    <None Include="wwwroot\img\Mountains\mount\2.jpg" />
+    <None Include="wwwroot\img\Mountains\mount\3.jpg" />
+    <None Include="wwwroot\img\Mountains\mount\4.jpg" />
+    <None Include="wwwroot\img\Mountains\mount\5.jpg" />
+    <None Include="wwwroot\img\Mountains\mount\6.jpg" />
+    <None Include="wwwroot\img\pioneer.jpg" />
+    <None Include="wwwroot\img\swing.jpg" />
+  </ItemGroup>
+
 </Project>
