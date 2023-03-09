@@ -5,29 +5,38 @@
     Layout = "_Layout";
 }
 
-<h2>Заполните форму для добавления устройства!</h2>
-<div class="row">
-    <div class="phone_add_form col-md-6">
-        <form asp-action="Add" method="post">
-            <div class="form_row">
-                <label for="">
-                    Наименование
-                    <input asp-for="Name" type="text">
-                </label>
-            </div>
-            <div class="form_row">
-                <label for="">
-                    Компания
-                    <input asp-for="Company" type="text">
-                </label>
-            </div>
-            <div class="form_row">
-                <label for="">
-                    Стоимость
-                    <input asp-for="Price" type="text">
-                </label>
-            </div>
-            <button type="submit">Создать</button>
-        </form>
-    </div>
-</div>
+@*<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>*@
+
+
+<body-form>
+    <form class='login-form' asp-action="Add" method="post">
+        <div class="flex-row logo">
+            <h1>Добавить устройство</h1>
+        </div>
+
+        <div class="flex-row">
+            <input asp-for="Name" class='lf--input' placeholder='Модель телефона' type='text'>
+        </div>
+
+        <div class="flex-row">
+            <input asp-for="Company" class='lf--input' placeholder='Производитель' type='text'>
+        </div>
+
+        <div class="flex-row">
+            <input asp-for="Price" class='lf--input' placeholder='Стоимость' type='text'>
+        </div>
+
+        <input class='lf--submit' type='submit' value='Добавить'>
+        <a class='lf--forgot' href='#'>Вернуться на главную</a>
+    </form>
+</body-form>
+
+

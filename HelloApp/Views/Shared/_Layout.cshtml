@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - HelloApp</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HelloApp.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/style.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Neucha&family=Raleway:ital,wght@0,400;0,800;1,400&display=swap"
           rel="stylesheet">
 </head>
@@ -24,7 +24,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                //
+
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -37,7 +37,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="TestAction2">Тестовый экшн (Sum)</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="TestAction">Тестовый экшн</a>
                         </li>
 
                         <li class="nav-item">
@@ -52,39 +52,39 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Pe6e3">Сайт разработчика</a>
                         </li>
                 </div>
-                //
 
             </div>
         </nav>
-
         <div class="top-slider">
             <div class="row ">
                 <div class="container carousel">
-                    <div id="slider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500">
+                    <div id="slider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="/img/Mountains/mount/1.jp" alt="1">
+                                <img src="~/img/Mountains/mount/1.jpg" alt="1">
                             </div>
                             <div class="carousel-item active">
-                                <img src="img/Mountains/mount/2.jpg" alt="10">
+                                <img src="~/img/Mountains/mount/2.jpg" alt="10">
                             </div>
                             <div class="carousel-item active">
-                                <img src="img/Mountains/mount/3.jpg" alt="11">
+                                <img src="~/img/Mountains/mount/3.jpg" alt="11">
                             </div>
                             <div class="carousel-item active">
-                                <img src="img/Mountains/mount/4.jpg" alt="12">
+                                <img src="~/img/Mountains/mount/4.jpg" alt="12">
                             </div>
                             <div class="carousel-item active">
-                                <img src="img/Mountains/mount/5.jpg" alt="2">
+                                <img src="~/img/Mountains/mount/5.jpg" alt="2">
                             </div>
                             <div class="carousel-item active">
-                                <img src="img/Mountains/mount/6.jpg" alt="3">
+                                <img src="~/img/Mountains/mount/6.jpg" alt="3">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
 
 
     </header>
@@ -97,45 +97,23 @@
 
 
     </div>
-    
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-   
 
-    <footer class="border-top footer text-muted">
+    <br />
+    <br />
+    <br />
+
+
+
+    <footer class="border-bottom  text-muted">
     </footer>
 
 
+    @*    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+    @*<script src="~/js/site.js" asp-append-version="true"></script>*@
+    <script src="~/js/bootstrap.bundle.min.js"></script>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

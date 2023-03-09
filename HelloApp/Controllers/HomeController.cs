@@ -1,6 +1,8 @@
 ﻿using HelloApp.Models;
+using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Drawing;
 
 namespace HelloApp.Controllers
 {
@@ -37,9 +39,15 @@ namespace HelloApp.Controllers
             return Redirect("https://pe6e3.github.io/");
         }
 
-        public IActionResult TestAction()
+        public FileResult TestAction()
         {
-            return RedirectToAction("Pe6e3");
+            // Путь к файлу
+            string file_path = @"~/img/Mountains/mount/1.jpg";
+            // Тип файла - content-type
+            string file_type = "application/octet-stream";
+            // Имя файла - необязательно
+            string file_name = "Gora";
+            return File(file_path, file_type, file_name);
         }
 
         public IActionResult TestAction2()
